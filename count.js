@@ -1,4 +1,4 @@
-var days, hours, minutes, seconds, x, now, distance;
+var days, hours, minutes, seconds, x, now, distance, url;
 function c(date , text){
   var countDownDate = new Date(date).getTime();
     x = setInterval(function() {
@@ -35,3 +35,13 @@ function c(date , text){
     }
   }, 1000);
 }
+function share(){
+  url = window.location.href;
+  console.log(url);  
+  document.execCommand('copy');
+  alert("coppied to clipboard");
+}
+document.addEventListener('copy', function(e){
+  e.clipboardData.setData('text/plain', url);
+  e.preventDefault();
+});

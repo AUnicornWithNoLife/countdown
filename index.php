@@ -5,6 +5,7 @@ $a = array("My Wedding", "Our Wedding", "My Birthday", "Christmas", "New Year", 
 $date = $_GET["d"];
     
 $text = $_GET["t"];
+
 if ($text == "Christmas"){
     $css = "xmas";
 }else{
@@ -12,14 +13,18 @@ if ($text == "Christmas"){
 }
 
 if (in_array($text, $a)){
+
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <div class="w3-container w3-row">
-        <a href='./setup' class="w3-half">create your own!</a>
-        <p class="w3-half">v=1.1.0</p>
+        <div class="w3-half">
+            <a href='./setup' class="in">create your own!</a>
+            <button onclick="share()">Share!</button>
+        </div>
+        <p class="w3-half in">v=1.1.1</p>
     </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +33,7 @@ if (in_array($text, $a)){
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
     <script src='count.js'></script>
+    <p id="clip" style="hidden;"></p>
 </head>
 <body>
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>

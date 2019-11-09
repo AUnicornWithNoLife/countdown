@@ -2,6 +2,10 @@
   --back: linear-gradient(to right, #ff0066, #6600ff);
   --text: white;
 }
+option{
+  color: black;
+  background-color: white;
+}
 h1{
   text-align: center;
   color: white;
