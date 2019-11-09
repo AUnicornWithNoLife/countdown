@@ -24,7 +24,7 @@ if (in_array($text, $a)){
             <a href='./setup' class="in">create your own!</a>
             <button onclick="share()">Share!</button>
         </div>
-        <p class="w3-half in">v=1.1.1</p>
+        <p class="w3-half in">v=1.2.0</p>
     </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
