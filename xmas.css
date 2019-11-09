@@ -1,6 +1,6 @@
 h1{
     text-align: center;
-    color: #ad313c;
+    color: #752128;
     border-top: 50%;
 }
 body{
@@ -9,4 +9,7 @@ body{
 }
 head{
     font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+p{
+    text-align: right;
 }
