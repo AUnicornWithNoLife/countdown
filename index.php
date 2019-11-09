@@ -18,8 +18,8 @@ try{
 <head>
     <div class="w3-container w3-row">
         <div class="w3-half">
-            <a href='./setup' class="in">create your own!</a>
-            <button onclick="share()">Share!</button>
+            <a href='./setup' class="in">Create your own!</a>
+            <button onclick="share()">Share!</button>            
         </div>
         <p class="w3-half in">v=1.3.0</p>
     </div>
