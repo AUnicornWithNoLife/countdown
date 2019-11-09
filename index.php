@@ -30,7 +30,7 @@ if (in_array($text, $a)){
     <script src='count.js'></script>
 </head>
 <body>
-    <h1 id='demo' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
+    <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
 </body>
 </html>
 
