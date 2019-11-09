@@ -1,5 +1,4 @@
 // Set the date we're counting down to
-  document.title = "your custom countdown";
 function c(date , text){
   var countDownDate = new Date(date).getTime();
 
@@ -35,11 +34,11 @@ if(days === 1){
    seconds = seconds + " seconds " + "until " + text;
  }
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + hours + minutes + seconds;
+  document.getElementById("count").innerHTML = days + hours + minutes + seconds;
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "have a great day";
+    document.getElementById("count").innerHTML = "have a great day";
   }
 }, 1000);
 }
