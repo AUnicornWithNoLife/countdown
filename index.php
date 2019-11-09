@@ -1,18 +1,15 @@
 <?php
 
-$a = array("My Wedding", "Our Wedding", "My Birthday", "Christmas", "New Year", "My Party", "Graduation");
-
 $date = $_GET["d"];
     
 $text = $_GET["t"];
 
-if ($text == "Christmas"){
+try{
+    $check = strpos($text, "Christmas") + 1;
     $css = "xmas";
-}else{
-    $css = "cool"; 
+}catch(Exception $e){
+    $css = "cool";
 }
-
-if (in_array($text, $a)){
 
 ?>
 
@@ -24,7 +21,7 @@ if (in_array($text, $a)){
             <a href='./setup' class="in">create your own!</a>
             <button onclick="share()">Share!</button>
         </div>
-        <p class="w3-half in">v=1.2.0</p>
+        <p class="w3-half in">v=1.3.0</p>
     </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,15 +38,5 @@ if (in_array($text, $a)){
 </html>
 
 <?php
-echo "<script> c('$date' , '$text');</script>";
-}else{
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv = "refresh" content = "0; url = ./setup" />
-</head>
-</html>
-<?php
-}
+echo "<script>c('$date','$text');</script>";
 ?>
