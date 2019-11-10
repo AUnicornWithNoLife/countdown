@@ -42,6 +42,8 @@ function share(){
   alert("coppied to clipboard");
 }
 document.addEventListener('copy', function(e){
-  e.clipboardData.setData('text/plain', url);
-  e.preventDefault();
+  if ($url != ""){
+    e.clipboardData.setData('text/plain', url);
+    e.preventDefault();
+  }
 });

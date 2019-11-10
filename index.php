@@ -4,13 +4,13 @@ $date = $_GET["d"];
     
 $text = $_GET["t"];
 
-try{
-    $check = strpos($text, "Christmas") + 1;
+$css = "cool";
+
+if(is_numeric(strpos($text, "Christmas"))){
     $css = "xmas";
-}catch(Exception $e){
-    $css = "cool";
 }
 
+if (isset($text)){
 ?>
 
 <!DOCTYPE html>
@@ -21,7 +21,7 @@ try{
             <a href='./setup' class="in">Create your own!</a>
             <button onclick="share()">Share!</button>            
         </div>
-        <p class="w3-half in">v=1.3.0</p>
+        <p class="w3-half in">v=1.3.1</p>
     </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,4 +39,14 @@ try{
 
 <?php
 echo "<script>c('$date','$text');</script>";
+}else{
+?>
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta http-equiv = "refresh" content = "0; url = ./setup" />
+   </head>
+</html>
+<?php
+}
 ?>
