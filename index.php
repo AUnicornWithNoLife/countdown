@@ -21,7 +21,7 @@ if (isset($text)){
             <a href='./setup' class="in">Create your own!</a>
             <button onclick="share()">Share!</button>            
         </div>
-        <p class="w3-half in" style="text-align: right;">v=1.3.1</p>
+        <p class="w3-half in" style="text-align: right;">v=1.3.2</p>
     </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
