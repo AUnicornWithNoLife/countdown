@@ -4,6 +4,10 @@ function c(date , text){
     x = setInterval(function() {
   now = new Date().getTime();
     distance = countDownDate - now;
+    if (text.includes("<script>") || text.includes("<noscript>")){
+      alert("fatal error with text input, errcode script.")
+      distance = -1;
+    }
     days = Math.floor(distance / (1000 * 60 * 60 * 24));
     hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
