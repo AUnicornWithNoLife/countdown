@@ -82,7 +82,8 @@ input[type=text] {
   color: white;
 }
 input[type=number] {
-  width: 10%;
+  min-width: 80px;
+  max-width: 100px;
   background-color: var(--back);
   color: var(--back);
   padding: 14px 20px;

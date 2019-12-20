@@ -44,7 +44,7 @@ if (isset($text)){
 
         </div>
 
-        <p class="w3-half in" style="text-align: right;">v=2.0.0</p>
+        <p class="w3-half in" style="text-align: right;">v=3.1.0</p>
 
     </div>
 
