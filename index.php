@@ -7,6 +7,9 @@ $css = "cool";
 if(is_numeric(strpos($text, "Christmas")) || is_numeric(strpos($text, "christmas")) || is_numeric(strpos($text, "xmas")) || is_numeric(strpos($text, "Xmas"))){
     $css = "xmas";
 }
+if(is_numeric(strpos($text, "Birthday")) || is_numeric(strpos($text, "birthday")) || is_numeric(strpos($text, "bday")) || is_numeric(strpos($text, "Bday"))){
+    $css = "bday";
+}
 
 if (isset($text)){
 ?>
@@ -19,7 +22,7 @@ if (isset($text)){
             <a href='./setup' class="in">Create your own!</a>
             <button onclick="share()">Share!</button>            
         </div>
-        <p class="w3-half in" style="text-align: right;">v=3.1.1</p>
+        <p class="w3-half in" style="text-align: right;">v=4.0.0</p>
     </div>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
