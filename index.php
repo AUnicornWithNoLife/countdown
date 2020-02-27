@@ -39,7 +39,7 @@ if (isset($text)){
             <a href='./setup' class="in">Create your own!</a>
             <button onclick="share()">Share!</button>            
         </div>
-        <p class="w3-half in" style="text-align: right;">v=4.1.0</p>
+        <p class="w3-half in" style="text-align: right;">v=4.1.1</p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
