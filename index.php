@@ -10,6 +10,9 @@ if(is_numeric(strpos($text, "Christmas")) || is_numeric(strpos($text, "christmas
 if(is_numeric(strpos($text, "Birthday")) || is_numeric(strpos($text, "birthday")) || is_numeric(strpos($text, "bday")) || is_numeric(strpos($text, "Bday"))){
     $css = "bday";
 }
+if(is_numeric(strpos($text, "New Year")) || is_numeric(strpos($text, "New year")) || is_numeric(strpos($text, "new Year")) || is_numeric(strpos($text, "new year"))){
+    $css = "newyear";
+}
 
 if (isset($text)){
 ?>
@@ -39,7 +42,7 @@ if (isset($text)){
             <a href='./setup' class="in">Create your own!</a>
             <button onclick="share()">Share!</button>            
         </div>
-        <p class="w3-half in" style="text-align: right;">v=4.1.1</p>
+        <p class="w3-half in" style="text-align: right;">v=4.1.2</p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
