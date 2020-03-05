@@ -13,5 +13,7 @@ function share() {
     /* Alert the copied text */
     alert("Copied the text");
 
+    console.log("coped text | " + window.location.href);
+
     document.body.removeChild(copyText);
 }

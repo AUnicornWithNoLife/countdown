@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
   
 function notifyMe(t) {
+    console.log("notafication sent | " + String(t));
     if (Notification.permission !== 'granted'){
         Notification.requestPermission();
     }else{
