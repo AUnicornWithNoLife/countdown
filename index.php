@@ -5,13 +5,13 @@ $text = $_GET["t"];
 $css = "cool";
 
 if(is_numeric(strpos($text, "Christmas")) || is_numeric(strpos($text, "christmas")) || is_numeric(strpos($text, "xmas")) || is_numeric(strpos($text, "Xmas"))){
-    $css = "xmas";
+    $css = "css.php?type=xmas&ext=jpg";
 }
 if(is_numeric(strpos($text, "Birthday")) || is_numeric(strpos($text, "birthday")) || is_numeric(strpos($text, "bday")) || is_numeric(strpos($text, "Bday"))){
-    $css = "bday";
+    $css = "css.php?type=bday&ext=png";
 }
 if(is_numeric(strpos($text, "New Year")) || is_numeric(strpos($text, "New year")) || is_numeric(strpos($text, "new Year")) || is_numeric(strpos($text, "new year"))){
-    $css = "newyear";
+    $css = "css.php?type=newyear&ext=jpg";
 }
 
 if (isset($text)){
@@ -26,7 +26,7 @@ if (isset($text)){
 
     <title>Your Custom Countdown</title>
 
-    <?php echo "<link rel='stylesheet' type='text/css' href='$css.css'>" ?>
+    <?php echo "<link rel='stylesheet' type='text/css' href='$css'>" ?>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
