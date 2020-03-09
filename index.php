@@ -5,13 +5,13 @@ $text = $_GET["t"];
 $css = "cool";
 
 if(is_numeric(strpos($text, "Christmas")) || is_numeric(strpos($text, "christmas")) || is_numeric(strpos($text, "xmas")) || is_numeric(strpos($text, "Xmas"))){
-    $css = "css.php?type=xmas&ext=jpg";
+    $css = "xmas";
 }
 if(is_numeric(strpos($text, "Birthday")) || is_numeric(strpos($text, "birthday")) || is_numeric(strpos($text, "bday")) || is_numeric(strpos($text, "Bday"))){
-    $css = "css.php?type=bday&ext=png";
+    $css = "bday";
 }
 if(is_numeric(strpos($text, "New Year")) || is_numeric(strpos($text, "New year")) || is_numeric(strpos($text, "new Year")) || is_numeric(strpos($text, "new year"))){
-    $css = "css.php?type=newyear&ext=jpg";
+    $css = "newyear";
 }
 
 if (isset($text)){
@@ -26,7 +26,7 @@ if (isset($text)){
 
     <title>Your Custom Countdown</title>
 
-    <?php echo "<link rel='stylesheet' type='text/css' href='$css'>" ?>
+    <?php echo "<link rel='stylesheet' type='text/css' href='$css.css'>" ?>
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
@@ -40,10 +40,10 @@ if (isset($text)){
     <div class="w3-container w3-row">
         <div class="w3-half">
             <a href='./setup' class="in">Create your own!</a>
-            <button onclick="share()">Share!</button> 
-            <a href="https://github.com/Redo-From-Start/countdown">Source Code</a>           
+            <button onclick="share()">Share!</button>
+            <a href='https://github.com/Redo-From-Start/countdown' class="in">Source Code</a>  
         </div>
-        <p class="w3-half in" style="text-align: right;">v=5.0.2</p>
+        <p class="w3-half in" style="text-align: right;">v=5.1.0</p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>

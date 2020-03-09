@@ -1,7 +1,6 @@
 var days, hours, minutes, seconds, x, now, distance, url;
 
 function c(date , text){
-  console.log("started countdown | " + String(date) + " | " + text);
   var countDownDate = new Date(date).getTime();
 
   x = setInterval(function() {
