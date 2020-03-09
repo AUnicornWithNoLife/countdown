@@ -18,5 +18,7 @@ function notifyMe(t) {
             body: 'Looks Like your event started :) \n hope you have fun...',
             timestamp: Date.parse(t),
         });
+
+        console.log("notafication sent | " + String(t));
     }
 }

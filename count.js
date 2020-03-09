@@ -3,6 +3,8 @@ var days, hours, minutes, seconds, x, now, distance, url;
 function c(date , text){
   var countDownDate = new Date(date).getTime();
 
+  console.log("count started | " + String(date) + " | " + String(text));
+
   x = setInterval(function() {
     now = new Date().getTime();
     distance = countDownDate - now;
