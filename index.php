@@ -14,7 +14,7 @@ if(is_numeric(strpos($text, "New Year")) || is_numeric(strpos($text, "New year")
     $css = "newyear";
 }
 
-if (isset($text)){
+if (isset($text) and not($date == "+:")){
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ if (isset($text)){
             <button onclick="share()">Share!</button>
             <a href='https://github.com/Redo-From-Start/countdown' class="in">Source Code</a>  
         </div>
-        <p class="w3-half in" style="text-align: right;">v=5.1.1</p>
+        <p class="w3-half in" style="text-align: right;">v=5.1.2</p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
