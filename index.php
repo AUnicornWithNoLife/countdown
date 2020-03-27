@@ -43,7 +43,7 @@ if (isset($text)){
             <button onclick="share()">Share!</button>
             <a href='https://github.com/Redo-From-Start/countdown' class="in">Source Code</a>  
         </div>
-        <p class="w3-half in" style="text-align: right;">v=5.1.3</p>
+        <p class="w3-half in" style="text-align: right;">v=6.0.0 beta</p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
