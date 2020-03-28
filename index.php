@@ -2,6 +2,7 @@
 
 $date = $_GET["d"];
 $text = $_GET["t"];
+$type = $_GET['type'];
 $css = "cool";
 
 if(is_numeric(strpos($text, "Christmas")) || is_numeric(strpos($text, "christmas")) || is_numeric(strpos($text, "xmas")) || is_numeric(strpos($text, "Xmas"))){
@@ -43,7 +44,7 @@ if (isset($text)){
             <button onclick="share()">Share!</button>
             <a href='https://github.com/Redo-From-Start/countdown' class="in">Source Code</a>  
         </div>
-        <p class="w3-half in" style="text-align: right;">v=6.0.0 beta 6</p>
+        <p class="w3-half in" style="text-align: right;">V=6.0.0 Beta 7</p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
@@ -51,14 +52,14 @@ if (isset($text)){
 </html>
 
 <?php
-echo "<script>c('$date','$text');</script>";
+echo "<script>c('$date','$text','$type');</script>";
 }else{
 ?>
 
 <!DOCTYPE html>
 <html>
    <head>
-      <meta http-equiv = "refresh" content = "0; url = ./setup" />
+      <meta http-equiv="refresh" content="0; url = ./setup"/>
    </head>
 </html>
 
