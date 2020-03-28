@@ -1,5 +1,7 @@
 <?php
 
+$type = $_POST["type"];
+
 $text = $_POST["t"];
 $d = $_POST["d"];
 
