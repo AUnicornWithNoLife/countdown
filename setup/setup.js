@@ -1,21 +1,10 @@
-var one = "";
-var two = "";
-
 $(document).ready(function(){
-    $("#1").click(function(){
+    $("#one").click(function(){
         console.log("1");
-        $.get("1.html", function(data, status){
-            console.log(status)
-            one = data;
-        });
-        $("#form").html(one);
+        $("#f").load("./1.html");
     });
-    $("#2").click(function(){
+    $("#two").click(function(){
         console.log("2");
-        $.get("2.html", function(data, status){
-            console.log(status)
-            two = data;
-        });
-        $("#form").html(two);
+        $("#f").load("./2.html");
     });
 });
