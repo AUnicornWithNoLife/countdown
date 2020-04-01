@@ -53,15 +53,14 @@ function c(date , text, type){
       }
     }, 1000);
   }else{
-    var countDownDate = new Date(date).getTime();
+    now = new Date().getTime();
+    var countDownDate = new Date(date).getTime() + now;
 
-    var change = new Date("0-00-00T00:00:01Z").getTime();
-
-    console.log("count started to future | " + String(date) + " | " + String(text));
+    console.log("count started | " + String(date) + " | " + String(text));
 
     x = setInterval(function() {
-      countDownDate = countDownDate - change;
-      distance = countDownDate;
+      now = new Date().getTime();
+      distance = countDownDate - now;
 
       if (text.includes("<script>") || text.includes("<noscript>")){
         alert("fatal error with text input, errcode script.")
