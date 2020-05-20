@@ -1,7 +1,5 @@
 <?php
 
-$type = $_POST["type"];
-
 $text = $_POST["t"];
 $d = $_POST["d"];
 
@@ -22,6 +20,6 @@ $t = urlencode($text);
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv = "refresh" content = "0; url = ../?<?php echo "t=$t&d=$date&type=$type" ?>" />
+    <meta http-equiv = "refresh" content = "0; url = ../?<?php echo "t=$t&d=$date" ?>" />
 </head>
 </html>
