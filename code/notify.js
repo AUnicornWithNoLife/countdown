@@ -14,8 +14,8 @@ function notifyMe(t) {
         Notification.requestPermission();
     }else{
         var notification = new Notification('Countdown Ended...', {
-            icon: 'https://static.thenounproject.com/png/149379-200.png',
-            body: 'Looks Like your event started :) \n hope you have fun...',
+            icon: './assets/notafication.png',
+            body: 'The Countdown Has Finished, \n Hope you have fun',
             timestamp: Date.parse(t),
         });
 
