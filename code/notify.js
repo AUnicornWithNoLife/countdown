@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     if (!Notification) {
-      alert('Desktop notifications not available in your browser.');
-      return;
+        alert('Desktop notifications not available in your browser.');
+        return;
     }
   
     if (Notification.permission !== 'granted'){
-      Notification.requestPermission();
+        Notification.requestPermission();
     }
 });
   

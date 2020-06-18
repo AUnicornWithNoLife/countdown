@@ -20,34 +20,34 @@ function c(date , text){
     seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     if(days === 1){
-      days = days + " day, ";
+      days = days + " Day, ";
     }else{
-      days = days + " days, ";
+      days = days + " Days, ";
     }
 
     if(hours === 1){
-      hours = hours + " hour, ";
+      hours = hours + " Hour, ";
     }else{
-      hours = hours + " hours, ";
+      hours = hours + " Hours, ";
     }
 
     if(minutes === 1){
-      minutes = minutes + " minute and ";
+      minutes = minutes + " Minute and ";
     }else{
-      minutes = minutes + " minutes and ";
+      minutes = minutes + " Minutes and ";
     }
 
     if(seconds === 1){
-      seconds = seconds + " second " + "until " + text;
+      seconds = seconds + " Second " + "until " + text;
     }else{
-      seconds = seconds + " seconds " + "until " + text;
+      seconds = seconds + " Seconds " + "until " + text;
     }
 
     document.getElementById("count").innerHTML = days + hours + minutes + seconds;
 
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("count").innerHTML = "have a great day";
+      document.getElementById("count").innerHTML = "Your Countdown Timer Has Finnished, <br> Have a Great Day!!";
 	    notifyMe(date);
     }
   }, 1000);
