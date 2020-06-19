@@ -15,21 +15,40 @@
     <body>
         <h1 style="font-family: 'ZCOOL QingKe HuangYou', cursive"> setup your custom countdown</h1>
 
+        <br>
+
         <div class="w3-container w3-half w3-display-middle">
         <form action="post.php" method="POST">
-            date it will be counting down until, in format mm/dd/yyyy<br> <input type="date" name="d"><br>
-            time it will be counting down untill
+            <p>date it will be counting down until, in format mm/dd/yyyy</p>
+
             <br>
+
+            <input type="date" name="d">
+
+            <br>
+
+            <p>time it will be counting down untill</p>
+
+            <br>
+
             <input type="number" name="hour" maxlength="2">:<input type="number" name="min" maxlength="2">
+
             <br>
-            thing you are counting down until
+            
+            <p>thing you are counting down until</p>
+
             <br>
-            <input type="text" name="t" style="color: white;"><br>
+
+            <input type="text" name="t" style="color: white;">
+
+            <br>
+
             <input type="submit" value="Submit">
         </form>
         </div>
     </body>
 </html>
+
 <style>
 *{
     text-align: center;
