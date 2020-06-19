@@ -47,7 +47,9 @@ function c(date , text){
 
     if (distance < 0) {
       clearInterval(x);
+
       document.getElementById("count").innerHTML = "Your Countdown Timer Has Finnished, <br> Have a Great Day!!";
+      
 	    notifyMe(date);
     }
   }, 1000);

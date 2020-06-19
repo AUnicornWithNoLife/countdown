@@ -15,7 +15,7 @@ function notifyMe(t) {
     }else{
         var notification = new Notification('Countdown Ended...', {
             icon: './assets/notafication.png',
-            body: 'The Countdown Has Finished, \n Hope you have fun',
+            body: 'The Countdown Has Finished, \n Hope You Have Fun.',
             timestamp: Date.parse(t),
         });
 

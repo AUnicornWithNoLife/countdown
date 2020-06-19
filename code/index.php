@@ -7,9 +7,11 @@ $css = "cool";
 if(is_numeric(strpos($text, "Christmas")) || is_numeric(strpos($text, "christmas")) || is_numeric(strpos($text, "xmas")) || is_numeric(strpos($text, "Xmas"))){
     $css = "xmas";
 }
+
 if(is_numeric(strpos($text, "Birthday")) || is_numeric(strpos($text, "birthday")) || is_numeric(strpos($text, "bday")) || is_numeric(strpos($text, "Bday")) || is_numeric(strpos($text, "BDay"))){
     $css = "bday";
 }
+
 if(is_numeric(strpos($text, "New Year")) || is_numeric(strpos($text, "New year")) || is_numeric(strpos($text, "new Year")) || is_numeric(strpos($text, "new year"))){
     $css = "newyear";
 }
@@ -40,10 +42,13 @@ if (isset($text) and not($date == "+:")){
     <div class="w3-container w3-row">
         <div class="w3-half">
             <a href='./setup' class="in">Create your own!</a>
+
             <button onclick="share()">Share!</button>
+
             <a href='https://github.com/Redo-From-Start/countdown' class="in">Source Code</a>  
+            <a href='./credits' class="in">Credits</a> 
         </div>
-        <p class="w3-half in" style="text-align: right;">v=5.1.4</p>
+        <p class="w3-half in" style="text-align: right;">v=5.2.0</p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
@@ -52,6 +57,7 @@ if (isset($text) and not($date == "+:")){
 
 <?php
 echo "<script>c('$date','$text');</script>";
+
 }else{
 ?>
 
@@ -59,7 +65,9 @@ echo "<script>c('$date','$text');</script>";
 <html>
    <head>
         <meta name="Clacks-Overhead" content="GNU terry pratchet">
-        <meta http-equiv = "refresh" content = "0; url = ./setup" />
+        <meta http-equiv = "refresh" content = "5; url = ./setup" />
+
+        <a href="./setup">Loading setup in 5 seconds, if it dosnt load, click here.</a>
    </head>
 </html>
 

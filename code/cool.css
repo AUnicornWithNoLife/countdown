@@ -2,18 +2,22 @@
   --back: linear-gradient(to right, #ff0066, #6600ff);
   --text: white;
 }
+
 h1{
   text-align: center;
   color: white;
   border-top: 50%;
 }
+
 body{
   background: var(--back);
   font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
+
 head{
   font-family: 'ZCOOL QingKe HuangYou', cursive;
 }
+
 input[type=text] {
   width: 75%;
   background-color: var(--back);
@@ -25,6 +29,7 @@ input[type=text] {
   cursor: pointer;
   color: white;
 }
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -35,6 +40,7 @@ input[type=text], select {
   box-sizing: border-box;
   background-color: var(--back);
 }
+
 input[type=submit] {
   width: 100%;
   background-color: var(--back);
@@ -45,12 +51,14 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 } 
+
 div {
   border-radius: 5px;
   background-color: black;
   padding: 20px;
   color: white;
 }
+
 input[type=date] {
   width: 50%;
   background-color: var(--back);
@@ -61,6 +69,7 @@ input[type=date] {
   border-radius: 4px;
   cursor: pointer;
 }
+
 input[type=date], select {
   padding: 12px 20px;
   margin: 8px 0;
@@ -70,6 +79,7 @@ input[type=date], select {
   box-sizing: border-box;
   background-color: var(--back);
 }
+
 input[type=text] {
   width: 75%;
   background-color: var(--back);
@@ -81,6 +91,7 @@ input[type=text] {
   cursor: pointer;
   color: white;
 }
+
 input[type=number] {
   min-width: 80px;
   max-width: 100px;
@@ -94,6 +105,7 @@ input[type=number] {
   color: white;
   display: inline-block;
 }
+
 input[type=number], select {
   padding: 12px 20px;
   margin: 8px 0;
