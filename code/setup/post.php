@@ -20,7 +20,11 @@ $t = urlencode($text);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta http-equiv = "refresh" content = "0; url = ../?<?php echo "t=$t&d=$date" ?>" />
+    <meta http-equiv = "refresh" content = "1; url = ../?<?php echo 't=$t&d=$date' ?>" />
+
+    <a href="../?<?php echo 't=$t&d=$date' ?>">Loading setup in 1 seconds, if it dosnt load, click here.</a>
 </head>
+
 </html>
