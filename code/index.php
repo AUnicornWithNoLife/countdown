@@ -16,7 +16,7 @@ if(is_numeric(strpos($text, "New Year")) || is_numeric(strpos($text, "New year")
     $css = "newyear";
 }
 
-if (isset($text) and not($date == "+:")){
+if (isset($text)){
 ?>
 
 <!DOCTYPE html>
