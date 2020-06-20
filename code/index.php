@@ -47,6 +47,7 @@ if (isset($text)){
 
             <a href='https://github.com/Redo-From-Start/countdown' class="in">Source Code</a>  
             <a href='./credits' class="in">Credits</a> 
+            <a href='./changes' class="in">Change Log</a> 
         </div>
         <p class="w3-half in" style="text-align: right;">v=5.2.2</p>
     </div>
