@@ -3,14 +3,6 @@
 $text = $_POST["t"];
 $d = $_POST["d"];
 
-if (!isset($_POST["hour"])){
-    $_POST["hour"] = 0;
-}
-
-if (!isset($_POST["min"])){
-    $_POST["min"] = 0;
-}
-
 $time = $_POST["hour"] . ":" . $_POST["min"];
 $date = $d . "+" . $time;
 
