@@ -17,7 +17,7 @@ $d = urlencode($date);
 <head>
     <meta http-equiv = "refresh" content = "1; url = ../?<?php echo "t=$t&d=$date" ?>" />
 
-    <a href="../?<?php echo "t=$t&d=$d" ?>">Loading setup in 1 seconds, if it dosnt load, click here.</a>
+    <a href="../?<?php echo "t=$t&d=$d" ?>">Loading countdown in 1 seconds, if it dosnt load, click here.</a>
 </head>
 
 </html>
