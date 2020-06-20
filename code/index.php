@@ -48,7 +48,7 @@ if (isset($text) and not($date == "+:")){
             <a href='https://github.com/Redo-From-Start/countdown' class="in">Source Code</a>  
             <a href='./credits' class="in">Credits</a> 
         </div>
-        <p class="w3-half in" style="text-align: right;">v=5.2.1</p>
+        <p class="w3-half in" style="text-align: right;">v=5.2.2</p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
