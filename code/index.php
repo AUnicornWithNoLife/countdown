@@ -37,6 +37,8 @@ if (isset($text)){
     <script src='count.js'></script>
     <script src='notify.js'></script>
     <script src='share.js'></script>
+    <script src="vload.js"></script>
+    <script src="getv.js"></script>
 </head>
 <body>
     <div class="w3-container w3-row">
@@ -49,7 +51,7 @@ if (isset($text)){
             <a href='./credits' class="in">Credits</a> 
             <a href='./changes' class="in">Change Log</a> 
         </div>
-        <p class="w3-half in" style="text-align: right;">v=5.2.2</p>
+        <p class="w3-half in" style="text-align: right;" id="version"></p>
     </div>
 
     <h1 id='count' style="font-family: 'ZCOOL QingKe HuangYou', cursive"> loading </h1>
