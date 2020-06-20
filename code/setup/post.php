@@ -15,6 +15,7 @@ $time = $_POST["hour"] . ":" . $_POST["min"];
 $date = $d . "+" . $time;
 
 $t = urlencode($text);
+$d = urlencode($date);
 
 ?>
 
@@ -22,9 +23,9 @@ $t = urlencode($text);
 <html lang="en">
 
 <head>
-    <meta http-equiv = "refresh" content = "1; url = ../?<?php echo 't=$t&d=$date' ?>" />
+    <meta http-equiv = "refresh" content = "1; url = ../?<?php echo "t=$t&d=$date" ?>" />
 
-    <a href="../?<?php echo "t=$t&d=$date" ?>">Loading setup in 1 seconds, if it dosnt load, click here.</a>
+    <a href="../?<?php echo "t=$t&d=$d" ?>">Loading setup in 1 seconds, if it dosnt load, click here.</a>
 </head>
 
 </html>
