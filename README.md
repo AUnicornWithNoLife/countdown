@@ -7,7 +7,7 @@
 
   apart from making sure you have the latest version of PHP their is no setup, just copy the files to where you want them, **just make sure not to change any file names, or move them around**		
   
-  if you wish to get a release, go to the releases tab, then download the code.zip file, if it is not their download the release.zip file, if you wish to get the latest test version, clone the repository, then move the code folder to your desired location.
+  if you wish to get a release, go to the releases tab, then download the release.zip file, then unzip and extract the code folder, this contains eerything you need., if you wish to get the latest test version, clone the repository, then move the code folder to your desired location.
 
   # Before updating		
 
