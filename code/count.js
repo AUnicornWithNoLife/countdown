@@ -1,4 +1,4 @@
-var days, hours, minutes, seconds, x, now, distance, url;
+var days, hours, minutes, seconds, x, now, distance;
 
 function c(date , text){
   var countDownDate = new Date(date).getTime();
